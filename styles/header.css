@@ -1,0 +1,180 @@
+.header__box{
+    height: 72px;
+}
+
+.header_container{
+ 
+  background-color: white;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+
+}
+
+.header__box > a{
+    font-weight: 600;
+    color: var(--black-50);
+}
+
+.active, .header__link:hover{
+  color: var(--gray-200);
+}
+
+
+.mob_box{
+    /* float: right; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.overlay-header {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay-header a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay-header a:hover, .overlay-header a:focus {
+    color: #f1f1f1;
+  }
+
+  .closebtn{
+    color: white;
+  }
+
+  .nav-icon{
+    font-size: 40px;
+    transform: rotate(-90deg);
+    margin-right: 8px;
+  }
+  
+  .overlay-header .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay-header a {font-size: 20px}
+    .overlay-header .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+/* .top__image{
+position: absolute;
+width: 220.22px;
+height: 147.72px;
+left: 750.92px;
+top: 0.65px;
+background-image: url(../assets/Frame.png);
+
+}
+
+.grop{
+    position: absolute;
+    width: 700.79px;
+    height: 700.3px;
+    right: 10px;
+    top: 10px;
+    background-image: url(../assets/Group.png);
+    transform: rotate(180deg);
+
+}
+
+.group{
+position: absolute;
+width: 800.79px;
+height: 1000.3px;
+left: 40px;
+top: 10px;
+background-image: url(../assets/Group.png);
+}
+
+.frame2{
+    position: absolute;
+    width: 217px;
+    height: 220.89px;
+    left: 30.14px;
+    top: 230.74px;
+    transform: rotate(10.11deg);  
+    background-image: url(../assets/Frame2.png); 
+}
+
+.frame3{
+    position: absolute;
+    width: 242.22px;
+    height: 290.08px;
+    left: 892px;
+    top: 578.84px;
+    transform: rotate(-4deg);
+    background-image: url(../assets/Frame3.png); 
+}
+
+.frame4{
+position: absolute;
+width: 155.41px;
+height: 180.36px;
+left: 570.09px;
+top: 637.74px;
+opacity: 0.48;
+transform: rotate(-3.07deg);
+background-image: url(../assets/Frame4.png);
+}
+
+.group2{
+position: absolute;
+width: 300.6px;
+height: 412.66px;
+right:0;
+overflow-y: hidden;
+top: 136.74px;
+background-image: url(../assets/Group\ 36.png);
+}
+
+.group3{
+    position: absolute;
+    width: 66.76px;
+    height: 72.01px;
+    left: 470.26px;
+    top: 93.89px;
+    opacity: 0.32;
+    transform: rotate(98.78deg);
+    background-image: url(../assets/Group\ 38.png);
+}
+
+.group4{
+position: absolute;
+width: 182.93px;
+height: 186.51px;
+left: 228.55px;
+top: 720.27px;
+
+opacity: 0.88;
+transform: rotate(168.14deg);
+background-image: url(../assets/Group\ 37.png);
+} */

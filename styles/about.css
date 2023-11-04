@@ -1,0 +1,64 @@
+.about__head > h1 {
+    font-family: var(--font-family-default);;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.37px;
+    margin-bottom: 24px;
+}
+
+.about__box{
+    margin-top: 192px;
+}
+
+.card__span-about{
+    background-color: white;
+    color: var(--green-50);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+
+.about__cards-span-box{
+    margin-bottom: 72px;
+}
+
+.about__inner-text{
+font-family: var(--font-family-default);
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+color: var(--black-300);
+}
+
+.input__box{
+    max-width: 330px;
+}
+
+.connection__head{
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 52px;
+color: #172B4D;
+}
+
+.connection__box{
+    margin-top: 162px;
+}
+
+
+.right{
+    float: right;
+}
+
+.source{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius:8px 0  0 8px;
+    padding: 8px;
+}

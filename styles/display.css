@@ -1,0 +1,44 @@
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.block{
+    display: block;
+}
+
+.relative{
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .md\:grid{
+        display: grid;
+    }
+
+    .md\:flex{
+        display: flex;
+    }
+
+    .md\:justify-start{
+      justify-content: flex-start;
+  }
+
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .md\:flex{
+      display: flex;
+    }
+
+    .md\:hidden{
+        display: none;
+      }
+  }

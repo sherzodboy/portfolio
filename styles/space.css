@@ -1,0 +1,90 @@
+.mx-4{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.ml-2{
+    margin-left: 8px;
+}
+
+.mr-1{
+    margin-right: 4px;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mb-2{
+    margin-bottom: 8px;
+}
+
+.mt-3{
+    margin-top: 12px;
+}
+
+.mt-6{
+    margin-top: 24px;
+}
+
+.mt-7{
+    margin-top: 28px;
+}
+
+.mt-10{
+    margin-top: 40px;
+}
+
+.mb-6{
+    margin-bottom: 24px;
+}
+
+.mb-8{
+    margin-bottom: 32px;
+}
+
+.mx-75{
+    max-width: 75rem;
+}
+
+.mx-55{
+    max-width: 55rem;
+}
+
+.px-3{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.px-6{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.px-7{
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.p-3{
+    padding: 12px;
+}
+
+.p-4{
+    padding: 16px;
+}
+
+
+.py-2{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-65{
+    width: 65%;
+}
