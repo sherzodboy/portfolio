@@ -1,471 +1,889 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/cards.css" />
+    <link rel="stylesheet" href="./styles/flex.css" />
+    <link rel="stylesheet" href="./styles/grid.css" />
+    <link rel="stylesheet" href="./styles/display.css" />
+    <link rel="stylesheet" href="./styles/space.css" />
+    <link rel="stylesheet" href="./styles/typo.css" />
+    <link rel="stylesheet" href="./styles/background.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sherzodboy</title>
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./styles/fonts.css">
-    <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/cards.css">
-    <link rel="stylesheet" href="./styles/flex.css">
-    <link rel="stylesheet" href="./styles/grid.css">
-    <link rel="stylesheet" href="./styles/display.css">
-    <link rel="stylesheet" href="./styles/space.css">
-    <link rel="stylesheet" href="./styles/typo.css">
-    <link rel="stylesheet" href="./styles/background.css">
-    <link rel="stylesheet" href="./styles/modal.css">
-</head>
-
-<body>
-
+  <body>
     <header class="header_container">
-        <div class="header__box mx-55 px-6 md:flex mx-auto justify-between align-center hidden">
-            <a href="#home" class="flex align-center header__link active"><i class='bx bxs-home mr-1'></i>Home</a>
-            <a href="#about" class="flex align-center header__link"><i class='bx bx-id-card mr-1'></i>About Me</a>
-            <a href="#projects" class="flex align-center header__link"><i
-                    class='bx bx-network-chart mr-1'></i>Projects</a>
-            <a href="#connect" class="flex align-center header__link"><i class='bx bxs-contact mr-1'></i>Contact</a>
-        </div>
-        <div class="md:hidden mob_box">
-            <div id="myNav" class="overlay-header">
-                <button class="closebtn" onclick="closeNav()"><i class='bx bx-x'></i></button>
-                <div class="overlay-content">
-                    <a href="#home" class="flex align-center header__link">Home</a>
-                    <a href="#about" class="flex align-center header__link">About Me</a>
-                    <a href="#projects" class="flex align-center header__link">Projects</a>
-                    <a href="#connect" class="flex align-center header__link">Contact</a>
-                    <div class="main__icons flex  justify-center mx-auto mt-6">
-                        <a href="https://github.com/sherzodboy" target="_blank"><i
-                                class='bx bxl-github black header__box-con'></i></a>
-                        <a href="https://www.linkedin.com/in/sherzod-kholmamatov-b1908b229/" target="_blank"><i
-                                class='bx bxl-linkedin black header__box-con'></i></a>
-                        <a href="https://twitter.com/Sherzodboi" target="_blank"><i
-                                class='bx bxl-twitter black header__box-con'></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100079737643070" target="_blank"><i
-                                class='bx bxl-facebook black header__box-con'></i></a>
-                    </div>
-                </div>
+      <div
+        class="header__box mx-55 px-6 md:flex mx-auto justify-between align-center hidden"
+      >
+        <a href="#home" class="flex align-center header__link active"
+          ><i class="bx bxs-home mr-1"></i>Home</a
+        >
+        <a href="#about" class="flex align-center header__link"
+          ><i class="bx bx-id-card mr-1"></i>About Me</a
+        >
+        <a href="#projects" class="flex align-center header__link"
+          ><i class="bx bx-network-chart mr-1"></i>Projects</a
+        >
+        <a href="#connect" class="flex align-center header__link"
+          ><i class="bx bxs-contact mr-1"></i>Contact</a
+        >
+      </div>
+      <div class="md:hidden mob_box">
+        <div id="myNav" class="overlay-header">
+          <button class="closebtn" onclick="closeNav()">
+            <i class="bx bx-x"></i>
+          </button>
+          <div class="overlay-content">
+            <a href="#home" class="flex align-center header__link">Home</a>
+            <a href="#about" class="flex align-center header__link">About Me</a>
+            <a href="#projects" class="flex align-center header__link"
+              >Projects</a
+            >
+            <a href="#connect" class="flex align-center header__link"
+              >Contact</a
+            >
+            <div class="main__icons flex justify-center mx-auto mt-6">
+              <a href="https://github.com/sherzodboy" target="_blank"
+                ><i class="bx bxl-github black header__box-con"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sherzod-muzaffarovich-b1908b229/"
+                target="_blank"
+                ><i class="bx bxl-linkedin black header__box-con"></i
+              ></a>
+              <a href="https://twitter.com/sherzodbm" target="_blank"
+                ><i class="bx bxl-twitter black header__box-con"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100079737643070"
+                target="_blank"
+                ><i class="bx bxl-facebook black header__box-con"></i
+              ></a>
             </div>
-            <button style="font-size:30px;cursor:pointer" onclick="openNav()"><i
-                    class='bx bx-bar-chart nav-icon'></i></button>
+          </div>
         </div>
-
+        <button style="font-size: 30px; cursor: pointer" onclick="openNav()">
+          <i class="bx bx-bar-chart nav-icon"></i>
+        </button>
+      </div>
     </header>
     <main class="">
-        <div id="home" class="">
-            <div class="container flex flex-column align-center justify-center px-6 ">
-                <div class=" main__box flex flex-column justify-center mx-auto mb-6">
-                    <h1 class="black">Hey there. I`m Sherzodboy</h1>
-                    <h1 class="green">I`m a software React(js) developer</h1>
-                </div>
-                <span class="span_main black-100">I can help you build a product , feature or website Look through some
-                    of my work and </span>
-                <span class="span_main black-100">experience! If you like what you see and have a project you need
-                    coded,</span>
-                <span class="span_main black-100"> don't hestiate to contact me.</span>
-                <div class="main__icons flex  justify-center mx-auto mt-6">
-                    <a href="https://github.com/sherzodboy" target="_blank"><i
-                            class='bx bxl-github black header__box-con'></i></a>
-                    <a href="https://www.linkedin.com/in/sherzod-kholmamatov-b1908b229/" target="_blank"><i
-                            class='bx bxl-linkedin black header__box-con'></i></a>
-                    <a href="https://twitter.com/Sherzodboi" target="_blank"><i
-                            class='bx bxl-twitter black header__box-con'></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100079737643070" target="_blank"><i
-                            class='bx bxl-facebook black header__box-con'></i></a>
-                </div>
-            </div>
+      <div style="margin-bottom: -100px" id="home" class="">
+        <div
+          class="container flex flex-column align-center justify-center px-6"
+        >
+          <div class="main__box flex flex-column justify-center mx-auto mb-6">
+            <h1 class="black">Hey there. I`m Sherzod</h1>
+            <h1 class="green">I`m a software React(js) developer</h1>
+          </div>
+          <span class="span_main black-100"
+            >Hi, I'm Sherzod. I am a Front-end guy from Uzbekistan. I like
+            learning new technologies and tools.
+          </span>
+          <span class="span_main black-100">
+            Also in my free time, I start working on myself, in order to
+            increase my knowledge even more.
+          </span>
+          <span class="span_main black-100">
+            I never get tired of coding, I enjoy writing code and I like to
+            share my knowledge with people. <br />
+            Mentored more than 20 students
+          </span>
+          <div class="main__icons flex justify-center mx-auto mt-6">
+            <a href="https://github.com/sherzodboy" target="_blank"
+              ><i class="bx bxl-github black header__box-con"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/sherzod-muzaffarovich-b1908b229/"
+              target="_blank"
+              ><i class="bx bxl-linkedin black header__box-con"></i
+            ></a>
+            <a href="https://twitter.com/sherzodbm" target="_blank"
+              ><i class="bx bxl-twitter black header__box-con"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100079737643070"
+              target="_blank"
+              ><i class="bx bxl-facebook black header__box-con"></i
+            ></a>
+            <a href="https://t.me/sherzodbm" target="_blank"
+              ><i class="bx bxl-telegram black header__box-con"></i
+            ></a>
+          </div>
         </div>
+      </div>
 
+      <div class="mx-75 mx-auto flex justify-center flex-column">
+        <div id="projects">
+          <h1
+            class="text-center px-6 flex align-center justify-center top__text"
+          >
+            My Recent Works
+          </h1>
 
-        <div class="mx-75 mx-auto flex justify-center flex-column ">
-            <div id="projects">
-                <h1 class="text-center px-6 flex align-center justify-center top__text">My Recent Works</h1>
-
-                <div class="flex flex-column relative  justify-center  px-6 grid gap-3 lg:grid-cols-3 md:grid-cols-2">
-                    <div class="border-round-full border flex flex-column justify-center mb-8 ">
-                        <img class="border-round w-100" src="./assets/hozuing.jpg" alt="Transaction app">
-                        <div class="bg-white border-round-b">
-                            <h2 class="card__inner-text text-center p-4">Houzing</h2>
-                            <div class="flex justify-center flex-wrap cards__span-box ">
-                                <span class="px-3 py-2 mb-2 border-round-min card__span">React js</span>
-                                <span class="px-3 py-2 mb-2 border-round-min card__span">Redux</span>
-                            </div>
-                            <div>
-                                <button href="#myModal2"
-                                    class="flex modal-button  btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">See
-                                    Project</button>
-                                <div class="overlay"></div>
-                                <div id="myModal2" class="modal">
-                                    <div class="modle-content mx-auto   flex flex-column">
-                                        <div class="inner__modal">
-                                            <button class="modal-close-btn relative"><i
-                                                    class='bx bxs-x-square modal-icon'></i></button>
-                                            <img class="border-round-full px-6  w-100 mb-6 modal__image"
-                                                src="./assets/hozuing.jpg" alt="Transaction app">
-                                            <div class="flex px-6 justify-start align-center">
-                                                <div class="">
-                                                    <span class="modal__text  flex  align-center flex-wrap">Transaction
-                                                        Group App</span>
-                                                </div>
-                                            </div>
-                                            <div class="flex px-6 justify-start mt-3 flex-wrap cards__span-box ">
-                                                <span class="px-3 py-2 mb-2 border-round-min card__span">React</span>
-                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Redux</span>
-                                            </div>
-                                            <div class="mt-3 px-6 mb-6">
-                                                <p>
-                                                    Building housing project with React js framework, User can signup
-                                                    and login and most popular
-                                                    libraries, using redux toolkit, token landing pages for building
-                                                    components, etc. Everything that needs to be done in the real
-                                                    project was done perfectly.</p>
-                                            </div>
-                                            <div class="flex mb-6 px-6 ">
-                                                <a href="https://github.com/sherzodboy/houzing" target='_blank'><button
-                                                        class="flex btn-primary  mx-4  text-white align-center border-round-min p-3   bg-green">See
-                                                        Source<i
-                                                            class='bx bxl-github text-white ml-2 '></i></button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-round-full border flex flex-column justify-center mb-8 ">
-                        <img class="border-round w-100" src="./assets/capture.jpg" alt="">
-                        <div class="">
-                            <h2 class="card__inner-text text-center p-4">Capture Website</h2>
-                            <div class="flex justify-center flex-wrap cards__span-box ">
-                                <span class="px-3 py-2 mb-2 border-round-min card__span">React js</span>
-                            </div>
-                            <div>
-                                <button href="#myModal1"
-                                    class="flex modal-button  btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">See
-                                    Project</button>
-                                <div class="overlay"></div>
-                                <div id="myModal1" class="modal">
-                                    <div class="modle-content mx-auto   flex flex-column">
-                                        <div class="inner__modal">
-                                            <button class="modal-close-btn relative"><i
-                                                    class='bx bxs-x-square modal-icon'></i></button>
-                                            <img class="border-round-full px-6  w-100 mb-6 modal__image"
-                                                src="./assets/capture.jpg" alt="">
-                                            <div class="flex px-6 justify-start align-center">
-                                                <div class="">
-                                                    <span class="modal__text  flex  align-center flex-wrap">Capture
-                                                        website</span>
-                                                </div>
-                                            </div>
-                                            <div class="flex px-6 justify-start mt-3 flex-wrap cards__span-box ">
-                                                <span class="px-3 py-2 mb-2 border-round-min card__span">React js</span>
-                                            </div>
-                                            <div class="mt-3 px-6 mb-6">
-                                                <p>This is an animation Social media website. In there you
-                                                    can see the latest libraries, beautiful animation as well as routing
-                                                    and just complex website.</p>
-                                            </div>
-                                            <div class="flex mb-6 px-6 ">
-                                                <a href="https://capturewebsitee.netlify.app/" target='_blank'>
-                                                    <button
-                                                        class="flex btn-primary text-white align-center border-round-min p-3  bg-green">See
-                                                        Live<i
-                                                            class='bx bx-target-lock text-white ml-2'></i></button></a>
-                                                <a href="https://github.com/sherzodboy/capture-build"
-                                                    target='_blank'><button
-                                                        class="flex btn-primary  mx-4  text-white align-center border-round-min p-3   bg-green">See
-                                                        Source<i
-                                                            class='bx bxl-github text-white ml-2 '></i></button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border-round-full border flex flex-column justify-center mb-8 ">
-                        <img class="border-round w-100" src="./assets/ignite.jpg" alt="">
-                        <div class="">
-                            <h2 class="card__inner-text text-center p-4">Ignite Game Website</h2>
-                            <div class="flex justify-center flex-wrap cards__span-box ">
-                                <span class="px-3 mb-2 py-2 border-round-min card__span">React js</span>
-                            </div>
-                            <div>
-                                <button href="#myModal3"
-                                    class="flex modal-button  btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">See
-                                    Project</button>
-                                <div class="overlay"></div>
-                                <div id="myModal3" class="modal">
-                                    <div class="modle-content mx-auto   flex flex-column">
-                                        <div class="inner__modal">
-                                            <button class="modal-close-btn relative"><i
-                                                    class='bx bxs-x-square modal-icon'></i></button>
-                                            <img class="border-round-full px-6  w-100 mb-6 modal__image"
-                                                src="./assets/ignite.jpg" alt="">
-                                            <div class="flex px-6 justify-start align-center">
-                                                <div class="">
-                                                    <span class="modal__text  flex  align-center flex-wrap">Ignite Game
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="flex px-6 justify-start mt-3 flex-wrap cards__span-box ">
-                                                <span class="px-3 py-2 mb-2 border-round-min card__span">React js</span>
-                                            </div>
-                                            <div class="mt-3 px-6 mb-6">
-                                                <p>it is about popular and coming games in the future about it, also
-                                                    used the latest apies, animations end etc..</p>
-                                            </div>
-                                            <div class="flex mb-6 px-6 ">
-                                                <a href="https://ignite-game-website.netlify.app/" target='_blank'>
-                                                    <button
-                                                        class="flex btn-primary text-white align-center border-round-min p-3  bg-green">See
-                                                        Live<i
-                                                            class='bx bx-target-lock text-white ml-2'></i></button></a>
-                                                <a href="https://github.com/sherzodboy/ignite" target='_blank'><button
-                                                        class="flex btn-primary  mx-4  text-white align-center border-round-min p-3   bg-green">See
-                                                        Source<i
-                                                            class='bx bxl-github text-white ml-2 '></i></button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border-round-full border flex flex-column justify-center mb-8 ">
-                        <img class="border-round w-100" src="./assets/music.jpg" alt="">
-                        <div class="">
-                            <h2 class="card__inner-text text-center p-4">Music Player</h2>
-                            <div class="flex justify-center flex-wrap cards__span-box ">
-                                <span class="px-3 py-2 mb-2 border-round-min card__span">React js</span>
-                            </div>
-                            <div>
-                                <button href="#myModal4"
-                                    class="flex modal-button  btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">See
-                                    Project</button>
-                                <div class="overlay"></div>
-                                <div id="myModal4" class="modal">
-                                    <div class="modle-content mx-auto   flex flex-column">
-                                        <div class="inner__modal">
-                                            <button class="modal-close-btn relative"><i
-                                                    class='bx bxs-x-square modal-icon'></i></button>
-                                            <img class="border-round-full px-6  w-100 mb-6 modal__image"
-                                                src="./assets/music.jpg" alt="">
-                                            <div class="flex px-6 justify-start align-center">
-                                                <div class="">
-                                                    <span class="modal__text  flex  align-center flex-wrap">Music
-                                                        Player</span>
-                                                </div>
-                                            </div>
-                                            <div class="flex px-6 justify-start mt-3 flex-wrap cards__span-box ">
-                                                <span class="px-3 py-2 mb-2 border-round-min card__span">React js</span>
-                                            </div>
-                                            <div class="mt-3 px-6 mb-6">
-                                                <p>Music player, you can listen diffrent musics by this app, you can
-                                                    skip, play pause and etc as well as mobile responsive, just see it
-                                                    and have a rest.</p>
-                                            </div>
-                                            <div class="flex mb-6 px-6 ">
-                                                <a href="https://react-app-music-player.netlify.app/" target='_blank'>
-                                                    <button
-                                                        class="flex btn-primary text-white align-center border-round-min p-3  bg-green">See
-                                                        Live<i
-                                                            class='bx bx-target-lock text-white ml-2'></i></button></a>
-                                                <a href="https://github.com/sherzodboy/music-player"
-                                                    target='_blank'><button
-                                                        class="flex btn-primary  mx-4  text-white align-center border-round-min p-3   bg-green">See
-                                                        Source<i
-                                                            class='bx bxl-github text-white ml-2 '></i></button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="border-round-full border flex flex-column justify-center mb-8 ">
-                        <img class="border-round w-100" src="./assets/shop.jpg" alt="">
-                        <div class="">
-                            <h2 class="card__inner-text text-center p-4">Shopping cart</h2>
-                            <div class="flex justify-center flex-wrap cards__span-box ">
-                                <span class="px-3 py-2 mb-2 border-round-min card__span">React js</span>
-                                <span class="px-3 py-2 mb-2 border-round-min card__span">Typescript</span>
-                            </div>
-                            <div>
-                                <button href="#myModal5"
-                                    class="flex modal-button  btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">See
-                                    Project</button>
-                                <div class="overlay"></div>
-                                <div id="myModal5" class="modal">
-                                    <div class="modle-content mx-auto   flex flex-column">
-                                        <div class="inner__modal">
-                                            <button class="modal-close-btn relative"><i
-                                                    class='bx bxs-x-square modal-icon'></i></button>
-                                            <img class="border-round-full px-6  w-100 mb-6 modal__image"
-                                                src="./assets/shop.jpg" alt="">
-                                            <div class="flex px-6 justify-start align-center">
-                                                <div class="">
-                                                    <span class="modal__text  flex  align-center flex-wrap">Shopping
-                                                        cart </span>
-                                                </div>
-                                            </div>
-                                            <div class="flex px-6 justify-start mt-3 flex-wrap cards__span-box ">
-                                                <span class="px-3 py-2 mb-2 border-round-min card__span">React js</span>
-                                                <span
-                                                    class="px-3 py-2 mb-2 border-round-min card__span">Typescript</span>
-
-                                            </div>
-                                            <div class="mt-3 px-6 mb-6">
-                                                <p>I tried to create a shopping card, mainly Typescript skills and
-                                                    Reacts
-                                                    were used to work with this project. I also used my designning
-                                                    skills with bootstrap</p>
-                                            </div>
-                                            <div class="flex mb-6 px-6 ">
-                                                <a href="https://shoping-cart-ts.netlify.app/" target='_blank'> <button
-                                                        class="flex btn-primary text-white align-center border-round-min p-3  bg-green">See
-                                                        Live<i
-                                                            class='bx bx-target-lock text-white ml-2'></i></button></a>
-                                                <a href="https://github.com/sherzodboy/Shoping-Cart"
-                                                    target='_blank'><button
-                                                        class="flex btn-primary  mx-4  text-white align-center border-round-min p-3   bg-green">See
-                                                        Source<i
-                                                            class='bx bxl-github text-white ml-2 '></i></button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="about" class="about__box flex flex-column align-center justify-center px-6">
-                <div class="about__head flex flex-column justify-center mx-auto">
-                    <h1 class="black-100 text-lg">About Me</h1>
-                </div>
-                <p class="span_main black-100">I`m Sherzod Muzaffarovich, a <span class="green bold">frontend
-                        developer</span> and <span class="green bold">son</span> living in Termez, </p>
-                <p class="span_main black-100">currently i am a freelancer.</p>
-
-                <a href="https://docs.google.com/document/d/1DWfmZ-q5qlWzwsSzMHjUWhOpK-9tZ-8wA96vF8cH4uc/edit"
-                    target="_blank">
-                    <button
-                        class="flex btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-8 mt-6 bg-green">Get
-                        My Resume</button>
-                </a>
-                <div class="md:grid lg:grid-cols-3 md:grid-cols-2 gap-3">
-                    <div class="border-round-full border flex flex-column justify-center mb-8 bg-gray ">
-                        <div class="px-7">
-                            <div class="flex justify-center mt-10">
-                                <span class="">
-                                    <img src="./assets/Icons.png" alt="">
-                                </span>
-                            </div>
-                            <h2 class="about__inner-text text-center p-4">Languages</h2>
-                            <div class="flex justify-center flex-wrap cards__span-box about__cards-span-box">
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">English</span>
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Russian</span>
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Uzbek</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-round-full border flex flex-column justify-center mb-8 bg-gray ">
-                        <div class="px-7">
-                            <div class="flex justify-center mt-10">
-                                <span class="">
-                                    <img src="./assets/Icons (1).png" alt="">
-                                </span>
-                            </div>
-                            <h2 class="about__inner-text text-center p-4">Frameworks</h2>
-                            <div class="flex justify-center flex-wrap cards__span-box about__cards-span-box">
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Bootstrap</span>
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Next js</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-round-full border flex flex-column justify-center mb-8 bg-gray ">
-                        <div class="px-7">
-                            <div class="flex justify-center mt-10">
-                                <span class="">
-                                    <img src="./assets/Icons (2).png" alt="">
-                                </span>
-                            </div>
-                            <h2 class="about__inner-text text-center p-4">Skills</h2>
-                            <div class="flex justify-center flex-wrap cards__span-box about__cards-span-box">
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">React js</span>
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Redux</span>
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Javascript</span>
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Typescript</span>
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Github</span>
-                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Terminal</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="connect" class="connection__box   px-6   grid md:grid-cols-2 gap-3 ">
-
-                <div class="flex flex-column flex-wrap">
-                    <p class="connection__head flex justify-center mb-2 text-center">I'm always interested in hearing
-                        about new projects, so if you'd like to chat please get in touch.</p>
-                    <p class="py-2"><q class="text-input">Learning to write programs stretches your mind, and helps you
-                            think better, creates a way of thinking about things that I think is helpful in all
-                            domains.</q> <cite class="right">- Bill Gates</cite> </p>
+          <div
+            class="flex flex-column relative justify-center px-6 grid gap-3 lg:grid-cols-3 md:grid-cols-2"
+          >
+            <!-- Crm -->
+            <div
+              class="border-round-full border flex flex-column justify-center mb-8"
+            >
+              <img
+                class="border-round w-100"
+                src="./assets/crm.png"
+                alt="Crm app"
+              />
+              <div class="bg-white border-round-b">
+                <h2 class="card__inner-text text-center p-4">Crm</h2>
+                <div class="flex justify-center flex-wrap cards__span-box">
+                  <span class="px-3 py-2 mb-2 border-round-min card__span"
+                    >React js</span
+                  >
                 </div>
                 <div>
-                    <form>
-                        <div class="grid lg:gap-4  lg:grid-cols-2">
-                            <input class="border text-input w-100 p-4 border-round-min mb-6" type="text"
-                                placeholder="First Name" required>
-                            <input class="border text-input w-100 p-4 border-round-min mb-6" type="text"
-                                placeholder="Last Name" required>
+                  <button
+                    href="#myModal0"
+                    class="flex modal-button btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green"
+                  >
+                    See Project
+                  </button>
+                  <div class="overlay"></div>
+                  <div id="myModal0" class="modal">
+                    <div class="modle-content mx-auto flex flex-column">
+                      <div class="inner__modal">
+                        <button class="modal-close-btn relative">
+                          <i class="bx bxs-x-square modal-icon"></i>
+                        </button>
+                        <img
+                          class="border-round-full px-6 w-100 mb-6 modal__image"
+                          src="./assets/crm2.png"
+                          alt="Transaction app"
+                        />
+                        <div class="flex px-6 justify-start align-center">
+                          <div class="">
+                            <span
+                              class="modal__text flex align-center flex-wrap"
+                              >Customer Relationship Management</span
+                            >
+                          </div>
                         </div>
-                        <div>
-                            <input class="border w-100 text-input p-4 border-round-min mb-6" type="email"
-                                placeholder="Email address" required>
-                            <textarea name="input_text" class="border-green w-100 border-round-min "
-                                rows="7"></textarea>
+                        <div
+                          class="flex px-6 justify-start mt-3 flex-wrap cards__span-box"
+                        >
+                          <span
+                            class="px-3 py-2 mb-2 border-round-min card__span"
+                            >React js</span
+                          >
                         </div>
-                        <div class="flex justify-center md:justify-start">
+                        <div class="mt-3 px-6 mb-6">
+                          <p>
+                            FullStack Application, Customer Relationship
+                            Management - Searching | Private Routes | Filter
+                            with URL | Generic components | Integration with
+                            Backend Database
+                          </p>
+                        </div>
+                        <div class="flex mb-6 px-6">
+                          <a
+                            href="https://billion-crm.netlify.app/analitika"
+                            target="_blank"
+                          >
                             <button
-                                class="flex btn-primary  text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">Get
-                                in touch</button>
+                              class="flex btn-primary text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Live<i
+                                class="bx bx-target-lock text-white ml-2"
+                              ></i></button
+                          ></a>
+                          <a
+                            href="https://github.com/sherzodboy/crm"
+                            target="_blank"
+                            ><button
+                              class="flex btn-primary mx-4 text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Source<i
+                                class="bx bxl-github text-white ml-2"
+                              ></i></button
+                          ></a>
                         </div>
-                    </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+            <!-- Houzing -->
+            <div
+              class="border-round-full border flex flex-column justify-center mb-8"
+            >
+              <img
+                class="border-round w-100"
+                src="./assets/hozuing.jpg"
+                alt="Transaction app"
+              />
+              <div class="bg-white border-round-b">
+                <h2 class="card__inner-text text-center p-4">Houzing</h2>
+                <div class="flex justify-center flex-wrap cards__span-box">
+                  <span class="px-3 py-2 mb-2 border-round-min card__span"
+                    >React js</span
+                  >
+                  <span class="px-3 py-2 mb-2 border-round-min card__span"
+                    >Redux</span
+                  >
+                </div>
+                <div>
+                  <button
+                    href="#myModal2"
+                    class="flex modal-button btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green"
+                  >
+                    See Project
+                  </button>
+                  <div class="overlay"></div>
+                  <div id="myModal2" class="modal">
+                    <div class="modle-content mx-auto flex flex-column">
+                      <div class="inner__modal">
+                        <button class="modal-close-btn relative">
+                          <i class="bx bxs-x-square modal-icon"></i>
+                        </button>
+                        <img
+                          class="border-round-full px-6 w-100 mb-6 modal__image"
+                          src="./assets/hozuing.jpg"
+                          alt="Transaction app"
+                        />
+                        <div class="flex px-6 justify-start align-center">
+                          <div class="">
+                            <span
+                              class="modal__text flex align-center flex-wrap"
+                              >Transaction Group App</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="flex px-6 justify-start mt-3 flex-wrap cards__span-box"
+                        >
+                          <span
+                            class="px-3 py-2 mb-2 border-round-min card__span"
+                            >React</span
+                          >
+                          <span
+                            class="px-3 py-2 mb-2 border-round-min card__span"
+                            >Redux</span
+                          >
+                        </div>
+                        <div class="mt-3 px-6 mb-6">
+                          <p>
+                            Building housing project with React js framework,
+                            User can signup and login and most popular
+                            libraries, using redux toolkit, token landing pages
+                            for building components, etc. Everything that needs
+                            to be done in the real project was done perfectly.
+                          </p>
+                        </div>
+                        <div class="flex mb-6 px-6">
+                          <a
+                            href="https://github.com/sherzodboy/houzing"
+                            target="_blank"
+                            ><button
+                              class="flex btn-primary mx-4 text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Source<i
+                                class="bx bxl-github text-white ml-2"
+                              ></i></button
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Capture Website -->
+            <div
+              class="border-round-full border flex flex-column justify-center mb-8"
+            >
+              <img
+                class="border-round w-100"
+                src="./assets/capture.jpg"
+                alt=""
+              />
+              <div class="">
+                <h2 class="card__inner-text text-center p-4">
+                  Capture Website
+                </h2>
+                <div class="flex justify-center flex-wrap cards__span-box">
+                  <span class="px-3 py-2 mb-2 border-round-min card__span"
+                    >React js</span
+                  >
+                </div>
+                <div>
+                  <button
+                    href="#myModal1"
+                    class="flex modal-button btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green"
+                  >
+                    See Project
+                  </button>
+                  <div class="overlay"></div>
+                  <div id="myModal1" class="modal">
+                    <div class="modle-content mx-auto flex flex-column">
+                      <div class="inner__modal">
+                        <button class="modal-close-btn relative">
+                          <i class="bx bxs-x-square modal-icon"></i>
+                        </button>
+                        <img
+                          class="border-round-full px-6 w-100 mb-6 modal__image"
+                          src="./assets/capture.jpg"
+                          alt=""
+                        />
+                        <div class="flex px-6 justify-start align-center">
+                          <div class="">
+                            <span
+                              class="modal__text flex align-center flex-wrap"
+                              >Capture website</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="flex px-6 justify-start mt-3 flex-wrap cards__span-box"
+                        >
+                          <span
+                            class="px-3 py-2 mb-2 border-round-min card__span"
+                            >React js</span
+                          >
+                        </div>
+                        <div class="mt-3 px-6 mb-6">
+                          <p>
+                            This is an animation Social media website. In there
+                            you can see the latest libraries, beautiful
+                            animation as well as routing and just complex
+                            website.
+                          </p>
+                        </div>
+                        <div class="flex mb-6 px-6">
+                          <a
+                            href="https://capturewebsitee.netlify.app/"
+                            target="_blank"
+                          >
+                            <button
+                              class="flex btn-primary text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Live<i
+                                class="bx bx-target-lock text-white ml-2"
+                              ></i></button
+                          ></a>
+                          <a
+                            href="https://github.com/sherzodboy/capture-build"
+                            target="_blank"
+                            ><button
+                              class="flex btn-primary mx-4 text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Source<i
+                                class="bx bxl-github text-white ml-2"
+                              ></i></button
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Ignite Game Website -->
+            <div
+              class="border-round-full border flex flex-column justify-center mb-8"
+            >
+              <img
+                class="border-round w-100"
+                src="./assets/ignite.jpg"
+                alt=""
+              />
+              <div class="">
+                <h2 class="card__inner-text text-center p-4">
+                  Ignite Game Website
+                </h2>
+                <div class="flex justify-center flex-wrap cards__span-box">
+                  <span class="px-3 mb-2 py-2 border-round-min card__span"
+                    >React js</span
+                  >
+                </div>
+                <div>
+                  <button
+                    href="#myModal3"
+                    class="flex modal-button btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green"
+                  >
+                    See Project
+                  </button>
+                  <div class="overlay"></div>
+                  <div id="myModal3" class="modal">
+                    <div class="modle-content mx-auto flex flex-column">
+                      <div class="inner__modal">
+                        <button class="modal-close-btn relative">
+                          <i class="bx bxs-x-square modal-icon"></i>
+                        </button>
+                        <img
+                          class="border-round-full px-6 w-100 mb-6 modal__image"
+                          src="./assets/ignite.jpg"
+                          alt=""
+                        />
+                        <div class="flex px-6 justify-start align-center">
+                          <div class="">
+                            <span
+                              class="modal__text flex align-center flex-wrap"
+                              >Ignite Game
+                            </span>
+                          </div>
+                        </div>
+                        <div
+                          class="flex px-6 justify-start mt-3 flex-wrap cards__span-box"
+                        >
+                          <span
+                            class="px-3 py-2 mb-2 border-round-min card__span"
+                            >React js</span
+                          >
+                        </div>
+                        <div class="mt-3 px-6 mb-6">
+                          <p>
+                            it is about popular and coming games in the future
+                            about it, also used the latest apies, animations end
+                            etc..
+                          </p>
+                        </div>
+                        <div class="flex mb-6 px-6">
+                          <a
+                            href="https://ignite-game-website.netlify.app/"
+                            target="_blank"
+                          >
+                            <button
+                              class="flex btn-primary text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Live<i
+                                class="bx bx-target-lock text-white ml-2"
+                              ></i></button
+                          ></a>
+                          <a
+                            href="https://github.com/sherzodboy/ignite"
+                            target="_blank"
+                            ><button
+                              class="flex btn-primary mx-4 text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Source<i
+                                class="bx bxl-github text-white ml-2"
+                              ></i></button
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Bankist Dom -->
+            <div
+              class="border-round-full border flex flex-column justify-center mb-8"
+            >
+              <img
+                class="border-round w-100"
+                src="./assets/bankistDom.png"
+                alt=""
+              />
+              <div class="">
+                <h2 class="card__inner-text text-center p-4">Bankist Dom</h2>
+                <div class="flex justify-center flex-wrap cards__span-box">
+                  <span class="px-3 py-2 mb-2 border-round-min card__span"
+                    >Javascript</span
+                  >
+                </div>
+                <div>
+                  <button
+                    href="#myModal4"
+                    class="flex modal-button btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green"
+                  >
+                    See Project
+                  </button>
+                  <div class="overlay"></div>
+                  <div id="myModal4" class="modal">
+                    <div class="modle-content mx-auto flex flex-column">
+                      <div class="inner__modal">
+                        <button class="modal-close-btn relative">
+                          <i class="bx bxs-x-square modal-icon"></i>
+                        </button>
+                        <img
+                          class="border-round-full px-6 w-100 mb-6 modal__image"
+                          src="./assets/bakistDom2.png"
+                          alt=""
+                        />
+                        <div class="flex px-6 justify-start align-center">
+                          <div class="">
+                            <span
+                              class="modal__text flex align-center flex-wrap"
+                              >Bankist Dom</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="flex px-6 justify-start mt-3 flex-wrap cards__span-box"
+                        >
+                          <span
+                            class="px-3 py-2 mb-2 border-round-min card__span"
+                            >Javascript</span
+                          >
+                        </div>
+                        <div class="mt-3 px-6 mb-6">
+                          <p>
+                            This project is continuation of bankist app. I
+                            worked in this project with my students and they
+                            leart how to build real live website and show modal
+                            slide bar and animations
+                          </p>
+                        </div>
+                        <div class="flex mb-6 px-6">
+                          <a
+                            href="https://sherzodboy.github.io/Bankist-dom/"
+                            target="_blank"
+                          >
+                            <button
+                              class="flex btn-primary text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Live<i
+                                class="bx bx-target-lock text-white ml-2"
+                              ></i></button
+                          ></a>
+                          <a
+                            href="https://github.com/sherzodboy/Bankist-dom"
+                            target="_blank"
+                            ><button
+                              class="flex btn-primary mx-4 text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Source<i
+                                class="bx bxl-github text-white ml-2"
+                              ></i></button
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Bankist App -->
+            <div
+              class="border-round-full border flex flex-column justify-center mb-8"
+            >
+              <img
+                class="border-round w-100"
+                src="./assets/bankistApp.png"
+                alt=""
+              />
+              <div class="">
+                <h2 class="card__inner-text text-center p-4">Bankist App</h2>
+                <div class="flex justify-center flex-wrap cards__span-box">
+                  <span class="px-3 py-2 mb-2 border-round-min card__span"
+                    >Javascript</span
+                  >
+                </div>
+                <div>
+                  <button
+                    href="#myModal5"
+                    class="flex modal-button btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green"
+                  >
+                    See Project
+                  </button>
+                  <div class="overlay"></div>
+                  <div id="myModal5" class="modal">
+                    <div class="modle-content mx-auto flex flex-column">
+                      <div class="inner__modal">
+                        <button class="modal-close-btn relative">
+                          <i class="bx bxs-x-square modal-icon"></i>
+                        </button>
+                        <img
+                          class="border-round-full px-6 w-100 mb-6 modal__image"
+                          src="./assets/bankistApp.png"
+                          alt=""
+                        />
+                        <div class="flex px-6 justify-start align-center">
+                          <div class="">
+                            <span
+                              class="modal__text flex align-center flex-wrap"
+                              >Bankist App
+                            </span>
+                          </div>
+                        </div>
+                        <div
+                          class="flex px-6 justify-start mt-3 flex-wrap cards__span-box"
+                        >
+                          <span
+                            class="px-3 py-2 mb-2 border-round-min card__span"
+                            >Javascript</span
+                          >
+                        </div>
+                        <div class="mt-3 px-6 mb-6">
+                          <p>
+                            In this project you can login in and log out, and
+                            transfer money to another, you can loan any money
+                            from any bank or people, sort by deposited and
+                            withdrawel money.
+                            <br />
+                            <b>login:</b> <i>js</i> <b>parol:</b> <i>1111</i>
+                            <br />
+                            <b>login:</b> <i>jd</i> <b>parol:</b> <i>2222</i>
+                            <br />
+                            <mark>this project has four users</mark>
+                          </p>
+                        </div>
+                        <div class="flex mb-6 px-6">
+                          <a
+                            href="https://sherzodboy.github.io/bankist/"
+                            target="_blank"
+                          >
+                            <button
+                              class="flex btn-primary text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Live<i
+                                class="bx bx-target-lock text-white ml-2"
+                              ></i></button
+                          ></a>
+                          <a
+                            href="https://github.com/sherzodboy/bankist"
+                            target="_blank"
+                            ><button
+                              class="flex btn-primary mx-4 text-white align-center border-round-min p-3 bg-green"
+                            >
+                              See Source<i
+                                class="bx bxl-github text-white ml-2"
+                              ></i></button
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div
+          id="about"
+          class="about__box flex flex-column align-center justify-center px-6"
+        >
+          <div class="about__head flex flex-column justify-center mx-auto">
+            <h1 class="black-100 text-lg">About Me</h1>
+          </div>
+          <p class="span_main black-100">
+            I`m Sherzod Muzaffarovich, a
+            <span class="green bold">frontend developer</span> and
+            <span class="green bold">son</span> living in Termez,
+          </p>
+          <p class="span_main black-100">currently i am a freelancer.</p>
+
+          <a
+            href="https://docs.google.com/document/d/1DWfmZ-q5qlWzwsSzMHjUWhOpK-9tZ-8wA96vF8cH4uc/edit"
+            target="_blank"
+          >
+            <button
+              class="flex btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-8 mt-6 bg-green"
+            >
+              Get My Resume
+            </button>
+          </a>
+          <div class="md:grid lg:grid-cols-3 md:grid-cols-2 gap-3">
+            <div
+              class="border-round-full border flex flex-column justify-center mb-8 bg-gray"
+            >
+              <div class="px-7">
+                <div class="flex justify-center mt-10">
+                  <span class="">
+                    <img src="./assets/Icons.png" alt="" />
+                  </span>
+                </div>
+                <h2 class="about__inner-text text-center p-4">Languages</h2>
+                <div
+                  class="flex justify-center flex-wrap cards__span-box about__cards-span-box"
+                >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >English</span
+                  >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >Uzbek</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="border-round-full border flex flex-column justify-center mb-8 bg-gray"
+            >
+              <div class="px-7">
+                <div class="flex justify-center mt-10">
+                  <span class="">
+                    <img src="./assets/Icons (1).png" alt="" />
+                  </span>
+                </div>
+                <h2 class="about__inner-text text-center p-4">Frameworks</h2>
+                <div
+                  class="flex justify-center flex-wrap cards__span-box about__cards-span-box"
+                >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >Bootstrap</span
+                  >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >Next js</span
+                  >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >...</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="border-round-full border flex flex-column justify-center mb-8 bg-gray"
+            >
+              <div class="px-7">
+                <div class="flex justify-center mt-10">
+                  <span class="">
+                    <img src="./assets/Icons (2).png" alt="" />
+                  </span>
+                </div>
+                <h2 class="about__inner-text text-center p-4">Skills</h2>
+                <div
+                  class="flex justify-center flex-wrap cards__span-box about__cards-span-box"
+                >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >React js</span
+                  >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >Next js</span
+                  >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >Redux</span
+                  >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >Javascript</span
+                  >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >Typescript</span
+                  >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >Github</span
+                  >
+                  <span
+                    class="px-3 py-2 mb-2 border-round-full card__span-about"
+                    >Terminal</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="connect"
+          class="connection__box px-6 grid md:grid-cols-3 gap-2"
+        >
+          <div class="flex flex-column flex-wrap">
+            <p class="connection__head flex justify-center mb-2 text-center">
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </p>
+            <p class="py-2">
+              <q class="text-input"
+                >Learning to write programs stretches your mind, and helps you
+                think better, creates a way of thinking about things that I
+                think is helpful in all domains.</q
+              >
+              <cite class="right">- Bill Gates</cite>
+            </p>
+          </div>
+          <!-- <div>
+            <form>
+              <div class="grid lg:gap-4 lg:grid-cols-2">
+                <input
+                  class="border text-input w-100 p-4 border-round-min mb-6"
+                  type="text"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  class="border text-input w-100 p-4 border-round-min mb-6"
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  class="border w-100 text-input p-4 border-round-min mb-6"
+                  type="email"
+                  placeholder="Email address"
+                  required
+                />
+                <textarea
+                  name="input_text"
+                  class="border-green w-100 border-round-min"
+                  rows="7"
+                ></textarea>
+              </div>
+              <div class="flex justify-center md:justify-start">
+                <button
+                  class="flex btn-primary text-white align-center border-round-min p-3 mb-6 mt-6 bg-green"
+                >
+                  Get in touch
+                </button>
+              </div>
+            </form>
+          </div> -->
+        </div>
+      </div>
     </main>
     <footer class="border-top mt-6">
-        <div class="main__icons flex  justify-center mx-auto mt-6">
-            <a href="https://github.com/sherzodboy" target="_blank"><i
-                    class='bx bxl-github black header__box-con'></i></a>
-            <a href="https://www.linkedin.com/in/sherzod-kholmamatov-b1908b229/" target="_blank"><i
-                    class='bx bxl-linkedin black header__box-con'></i></a>
-            <a href="https://twitter.com/Sherzodboi" target="_blank"><i
-                    class='bx bxl-twitter black header__box-con'></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100079737643070" target="_blank"><i
-                    class='bx bxl-facebook black header__box-con'></i></a>
-        </div>
+      <div class="main__icons flex justify-center mx-auto mt-6">
+        <a href="https://github.com/sherzodboy" target="_blank"
+          ><i class="bx bxl-github black header__box-con"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/sherzod-muzaffarovich-b1908b229/"
+          target="_blank"
+          ><i class="bx bxl-linkedin black header__box-con"></i
+        ></a>
+        <a href="https://twitter.com/sherzodbm" target="_blank"
+          ><i class="bx bxl-twitter black header__box-con"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100079737643070"
+          target="_blank"
+          ><i class="bx bxl-facebook black header__box-con"></i
+        ></a>
+        <a href="https://t.me/sherzodbm" target="_blank"
+          ><i class="bx bxl-telegram black header__box-con"></i
+        ></a>
+      </div>
     </footer>
 
     <script src="./modal.js"></script>
     <script src="./header.js"></script>
-
-</body>
-
+  </body>
 </html>
